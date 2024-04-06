@@ -17,7 +17,7 @@ To calculate the volume of any solid, there are two steps required:
 1. Calculate the volume in cubic cm - cm<sup>3</sup>.
 2. Covert the cm<sup>3</sup> volume to litres.
 
-### Example 1 - Cube
+### Cube
 
 The formula for calculating the volume of a cube in cm<sup>3</sup> is L x W x H:
 
