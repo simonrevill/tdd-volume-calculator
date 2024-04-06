@@ -1,0 +1,17 @@
+{
+  "name": "tdd-volume-calculator",
+  "version": "0.0.1",
+  "description": "A TDD practice exercise suggested by Jason Gorman in his book on the subject - Codemanship - TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "author": "Simon Revill",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.4"
+  }
+}
