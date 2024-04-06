@@ -46,3 +46,35 @@ The formula for calculating the volume of a pyramid is 1/3 x L x W x H:
 1/3 x 10cm<sup>3</sup> x 10cm<sup>3</sup> 10cm<sup>3</sup> = 333.33cm<sup>3</sup>
 
 Therefore the volume of this pyramid is 333.33cm<sup>3</sup> / 1000 = 0.33 litres
+
+## Pre-TDD thoughts
+
+It would be good to separate the calculation of the area of the solid first, perhaps with a Solid interface:
+
+```ts
+interface Solid {
+  getAreaInCubicCentimetres(): number;
+}
+```
+
+And then the class can implement this interface. For example a cube:
+
+```ts
+class Cube implements Solid {
+  #length: number;
+  #width: number;
+  #height: number;
+
+  constructor(length: number, width: number, height: number) {
+    this.#length = length;
+    this.#width = width;
+    this.#height = length;
+  }
+
+  getAreaInCubicCentimetres(): number {
+    return this.#length * this.#width * this.#height;
+  }
+}
+```
+
+Following this, a class called `VolumeCalculator` can accept a solid class to retrieve its area.
