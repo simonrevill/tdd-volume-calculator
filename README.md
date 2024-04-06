@@ -15,7 +15,7 @@ Writing the assertions first and working backwards to the set-up, test-drive som
 To calculate the volume of any solid, there are two steps required:
 
 1. Calculate the volume in cubic cm - cm<sup>3</sup>.
-2. Covert the cm<sup>3</sup> volume to litres.
+2. Convert the volume in cm<sup>3</sup> to litres.
 
 ### Cube
 
