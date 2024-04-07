@@ -68,11 +68,23 @@ class Cube implements Solid {
   constructor(length: number, width: number, height: number) {
     this.#length = length;
     this.#width = width;
-    this.#height = length;
+    this.#height = height;
+  }
+
+  get length(): number {
+    return this.#length;
+  }
+
+  get width(): number {
+    return this.#width;
+  }
+
+  get height(): number {
+    return this.#height;
   }
 
   getAreaInCubicCentimetres(): number {
-    return this.#length * this.#width * this.#height;
+    return this.length * this.width * this.height;
   }
 }
 ```
