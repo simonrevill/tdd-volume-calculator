@@ -10,4 +10,9 @@ describe('cubic centimetre volume tests', () => {
     const cube = new Cube(10, 10, 10);
     expect(cube.width).toBe(10);
   });
+
+  it('creates a cube with height of 10', () => {
+    const cube = new Cube(10, 10, 10);
+    expect(cube.height).toBe(10);
+  });
 });
