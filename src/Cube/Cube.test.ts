@@ -16,5 +16,10 @@ describe('cube tests', () => {
       const cube = new Cube(10, 10, 10);
       expect(cube.height).toBe(10);
     });
+
+    it('creates a cube with the volume of 1000', () => {
+      const cube = new Cube(10, 10, 10);
+      expect(cube.getAreaInCubicCentimetres()).toBe(1000);
+    });
   });
 });
