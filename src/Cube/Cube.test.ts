@@ -13,6 +13,12 @@ describe('cube tests', () => {
         new Cube(10, -10, 10);
       }).toThrow('Width cannot be a negative number. Value given was -10.');
     });
+
+    it('throws an error when height is negative', () => {
+      expect(() => {
+        new Cube(10, 10, -10);
+      }).toThrow('Height cannot be a negative number. Value given was -10.');
+    });
   });
 
   describe('cubic centimetre volume tests', () => {

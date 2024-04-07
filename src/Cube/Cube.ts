@@ -14,6 +14,10 @@ export default class Cube implements Solid {
       throw new Error(`Width cannot be a negative number. Value given was ${width}.`);
     }
 
+    if (height < 0) {
+      throw new Error(`Height cannot be a negative number. Value given was ${height}.`);
+    }
+
     this.#length = length;
     this.#width = width;
     this.#height = height;
