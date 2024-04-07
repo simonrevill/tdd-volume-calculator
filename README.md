@@ -89,4 +89,20 @@ class Cube implements Solid {
 }
 ```
 
-Following this, a class called `VolumeCalculator` can accept a solid class to retrieve its area.
+Following this, a class called `VolumeCalculator` can accept a solid class to retrieve its area:
+
+```ts
+class VolumeCalculator {
+  getRequiredLitresOfWater(solid: Solid): number {
+    return solid.getAreaInCubicCentimetres() / 1000;
+  }
+}
+
+const cube = new Cube(10, 10, 10);
+
+const volumeCalculator = new VolumeCalculator();
+
+const litres = volumeCalculator.getRequiredLitresOfWater(cube);
+```
+
+Something along these lines.
