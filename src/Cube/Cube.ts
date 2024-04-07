@@ -6,6 +6,9 @@ export default class Cube implements Solid {
   #height: number;
 
   constructor(length: number, width: number, height: number) {
+    if (length < 0) {
+      throw new Error(`Length cannot be a negative number. Value given was ${length}.`);
+    }
     this.#length = length;
     this.#width = width;
     this.#height = height;

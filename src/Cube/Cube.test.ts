@@ -1,6 +1,14 @@
 import Cube from './Cube';
 
 describe('cube tests', () => {
+  describe('cube initialisation tests', () => {
+    it('throws an error when length is negative', () => {
+      expect(() => {
+        new Cube(-10, 10, 10);
+      }).toThrow('Length cannot be a negative number. Value given was -10.');
+    });
+  });
+
   describe('cubic centimetre volume tests', () => {
     it('creates a cube with length of 10', () => {
       const cube = new Cube(10, 10, 10);
