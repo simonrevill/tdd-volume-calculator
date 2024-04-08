@@ -14,4 +14,12 @@ describe('cylinder tests', () => {
       }).toThrow('Height cannot be a negative number. Value given was -10.');
     });
   });
+
+  describe('cubic centimetre volume tests', () => {
+    it('creates a cylinder with radius of 10', () => {
+      const cylinder = new Cylinder(10, 10);
+
+      expect(cylinder.radius).toBe(10);
+    });
+  });
 });
