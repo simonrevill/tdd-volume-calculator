@@ -10,6 +10,10 @@ export default class Pyramid implements Solid {
       throw new Error(`Length cannot be a negative number. Value given was ${length}.`);
     }
 
+    if (width < 0) {
+      throw new Error(`Width cannot be a negative number. Value given was ${width}.`);
+    }
+
     this.#length = length;
     this.#width = width;
     this.#height = height;
