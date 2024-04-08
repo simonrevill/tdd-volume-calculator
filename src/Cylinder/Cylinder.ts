@@ -1,4 +1,6 @@
-export default class Cylinder {
+import { Solid } from '../types';
+
+export default class Cylinder implements Solid {
   #radius: number;
   #height: number;
 
@@ -21,5 +23,13 @@ export default class Cylinder {
 
   get height(): number {
     return this.#height;
+  }
+
+  getAreaInCubicCentimetres(): number {
+    const area = Math.PI * this.#radius * this.#radius * this.#height;
+
+    const result = Number(area.toFixed(2));
+
+    return result;
   }
 }

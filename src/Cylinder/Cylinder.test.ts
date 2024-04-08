@@ -27,5 +27,11 @@ describe('cylinder tests', () => {
 
       expect(cylinder.height).toBe(10);
     });
+
+    it('creates a cylinder with a volume of 3141.59', () => {
+      const cylinder = new Cylinder(10, 10);
+
+      expect(cylinder.getAreaInCubicCentimetres()).toBe(3141.59);
+    });
   });
 });
