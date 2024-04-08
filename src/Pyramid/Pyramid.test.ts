@@ -1,7 +1,9 @@
 import Pyramid from './Pyramid';
 
 describe('pyramid tests', () => {
-  describe('pyramid initialisation tests', () => {
+  describe('pyramid initialisation tests', () => {});
+
+  describe('cubic centimetre volume tests', () => {
     it('creates a pyramid with a length of 10', () => {
       const pyramid = new Pyramid(10, 10, 10);
 
