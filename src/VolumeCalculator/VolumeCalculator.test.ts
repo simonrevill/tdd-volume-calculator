@@ -1,4 +1,5 @@
 import Cube from '../Cube';
+import Cylinder from '../Cylinder/Cylinder';
 import Pyramid from '../Pyramid';
 import VolumeCalculator from './VolumeCalculator';
 
@@ -12,8 +13,17 @@ describe('volume calculator tests', () => {
     });
   });
 
+  describe('cylinder litre tests', () => {
+    it('gets the volume of a cylinder in litres which is 3.14', () => {
+      const pyramid = new Cylinder(10, 10);
+      const volumeCalculator = new VolumeCalculator();
+
+      expect(volumeCalculator.getRequiredLitresOfWater(pyramid)).toBe(3.14);
+    });
+  });
+
   describe('pyramid litre tests', () => {
-    it('gets the volume of a pyramid in litres which is 1', () => {
+    it('gets the volume of a pyramid in litres which is 0.33', () => {
       const pyramid = new Pyramid(10, 10, 10);
       const volumeCalculator = new VolumeCalculator();
 
