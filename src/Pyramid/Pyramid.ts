@@ -24,6 +24,10 @@ export default class Pyramid implements Solid {
   }
 
   getAreaInCubicCentimetres(): number {
-    return Number(((1 / 3) * this.#length * this.#width * this.#height).toFixed(2));
+    const area = (1 / 3) * this.#length * this.#width * this.#height;
+
+    const result = Number(area.toFixed(2));
+
+    return result;
   }
 }
