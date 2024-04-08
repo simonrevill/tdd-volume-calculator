@@ -1,7 +1,13 @@
 import Pyramid from './Pyramid';
 
 describe('pyramid tests', () => {
-  describe('pyramid initialisation tests', () => {});
+  describe('pyramid initialisation tests', () => {
+    it('throws an error when length is negative', () => {
+      expect(() => {
+        new Pyramid(-10, 10, 10);
+      }).toThrow('Length cannot be a negative number. Value given was -10.');
+    });
+  });
 
   describe('cubic centimetre volume tests', () => {
     it('creates a pyramid with a length of 10', () => {
