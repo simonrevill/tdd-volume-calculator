@@ -18,4 +18,8 @@ export default class Cylinder {
   get radius(): number {
     return this.#radius;
   }
+
+  get height(): number {
+    return this.#height;
+  }
 }

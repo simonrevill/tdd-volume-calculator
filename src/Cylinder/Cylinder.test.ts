@@ -21,5 +21,11 @@ describe('cylinder tests', () => {
 
       expect(cylinder.radius).toBe(10);
     });
+
+    it('creates a cylinder with height of 10', () => {
+      const cylinder = new Cylinder(10, 10);
+
+      expect(cylinder.height).toBe(10);
+    });
   });
 });
