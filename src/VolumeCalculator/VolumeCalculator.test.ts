@@ -15,10 +15,10 @@ describe('volume calculator tests', () => {
 
   describe('cylinder litre tests', () => {
     it('gets the volume of a cylinder in litres which is 3.14', () => {
-      const pyramid = new Cylinder(10, 10);
+      const cylinder = new Cylinder(10, 10);
       const volumeCalculator = new VolumeCalculator();
 
-      expect(volumeCalculator.getRequiredLitresOfWater(pyramid)).toBe(3.14);
+      expect(volumeCalculator.getRequiredLitresOfWater(cylinder)).toBe(3.14);
     });
   });
 
